@@ -7,7 +7,6 @@
 /* Variable Styles */
 :root{
     --primary-color:#FF42A5;
-    --primary-font-size: 3rem;
 }
 
 /* Share Color */
@@ -15,13 +14,6 @@
 .primary-color{
     color: var(--primary-color);
 }
-
-.primary-font-size{
-    font-size: var(--primary-font-size);
-    font-weight: 600;
-}
-
-
 
 
 /* Header section styles */
@@ -87,6 +79,10 @@ nav a{
 }
 
 .banner-title{
+    font-size: 3rem;
+}
+
+.banner-main-title{
     font-size: 6rem;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -131,4 +127,125 @@ nav a{
 
 .go-rogue-btn{
     background: #4EC5F7;
+}
+
+/*
+-------------------------------------------
+    Responsive Styles for Mobile Device
+-------------------------------------------
+*/
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .nav-icons{
+        gap: 10px;
+    }
+
+    .nav-title{
+        font-size: 2rem;
+    }
+
+    .nav-items{
+        gap: 10px;
+        padding: 10px 12px;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .banner-content{
+        margin-top: 50px;
+    }
+
+    .banner-title{
+        font-size: 1.5rem;
+    }
+
+    .banner-main-title{
+        font-size: 3rem;
+    }
+    .banner-img-container img{
+        width: 100%;
+    }
+
+    .banner-btn-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .primary-btn{
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        margin-right: 15px;
+    }
+
+
+}
+
+
+
+
+/*
+-------------------------------------
+    Responsive for Medium Device
+--------------------------------------
+*/
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    nav{
+        flex-direction: column;
+
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .nav-icons{
+        gap: 15px;
+    }
+
+    .nav-items{
+        padding: 10px 12px;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+    }
+
+    .banner-content{
+        margin-top: 50px;
+    }
+
+    .banner-img-container img{
+        width: 100%;
+    }
+
+    .banner-btn-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .primary-btn{
+        padding: 15px 20px;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-right: 40px;
+    }
+
 }
