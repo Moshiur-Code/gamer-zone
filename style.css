@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Variable Styles */
+:root{
+    --primary-color:#FF42A5;
+    --primary-font-size: 3rem;
+}
+
+/* Share Color */
+/* ---------------- */
+.primary-color{
+    color: var(--primary-color);
+}
+
+.primary-font-size{
+    font-size: var(--primary-font-size);
+    font-weight: 600;
+}
+
+
+
+
+/* Header section styles */
+nav{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+nav li{
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+
+/* Banner section styles */
+/* ---------------------- */
+.banner-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.banner-content{
+    border: 2px solid red;
+}
+
+.banner-title{
+    font-size: 6rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.banner-description-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner-icons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.banner-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.primary-btn{
+    margin-top: 25px;
+    padding: 20px 40px;
+    border-radius: 48px;
+    background:#FF42A5;    
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.go-rogue-btn{
+    background: #4EC5F7;
+}
