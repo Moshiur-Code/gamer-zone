@@ -224,7 +224,6 @@ nav a{
     Careers Section Styles
 */
 .career-container{
-    border: 2px solid black;
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
     color: #FFF;
     display: flex;
@@ -256,7 +255,65 @@ nav a{
 }
 
 
+/* 
+    Game Category Section
+*/
+.game-category-container{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
 
+.game-category{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    gap: 20px; 
+}
+
+/* 
+    Footer Section Styles
+*/
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #0B0223;
+    color: #fff;
+}
+
+.footer-category-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footer-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.terms-condition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+    color: rgba(255, 255, 255, 0.60);
+    margin-bottom: 30px;
+}
+
+.copy-write{
+    color: rgba(255, 255, 255, 0.60);
+}
 
 
 /*
@@ -392,8 +449,44 @@ nav a{
         text-align: center;
     }
 
+    .game-category-container{
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .game-category{
+        font-size: .6rem;
+        font-weight: 500;
+        gap: 10px;
+    }
 
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-category-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
 
+    .footer-icons-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    .footer-icons-container i{
+        margin-top: 20px;
+    }
+
+    .terms-condition{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .terms-condition p{
+        margin-top: 20px;
+    }
 }
 
 
@@ -456,6 +549,10 @@ nav a{
         text-align: center;
     }
 
+    .gammer-container img{
+        width: 100%;
+    }
+
         
     .online-games-card-container{
         flex-direction: column;
@@ -507,4 +604,28 @@ nav a{
         text-align: center;
     }
 
+    .game-category-container{
+        padding: 70px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .game-category{
+        gap: 15px;
+    }
+
+    footer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer-category-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .copy-write{
+        margin-top: 50px;
+    }
 }
