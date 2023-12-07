@@ -15,13 +15,45 @@
     color: var(--primary-color);
 }
 
+.section-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.section-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #534C64;
+}
+
+.primary-btn{
+    margin-top: 25px;
+    padding: 20px 40px;
+    border-radius: 48px;
+    background:#FF42A5;    
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.colorful-section-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* Header section styles */
 nav{
-    margin-top: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 30px 0px;
 }
 
 .nav-icons{
@@ -74,10 +106,6 @@ nav a{
 
 }
 
-.banner-content{
-    border: 2px solid red;
-}
-
 .banner-title{
     font-size: 3rem;
 }
@@ -113,21 +141,90 @@ nav a{
     font-weight: 500;
 }
 
-.primary-btn{
-    margin-top: 25px;
-    padding: 20px 40px;
-    border-radius: 48px;
-    background:#FF42A5;    
-    border: 0;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-right: 20px;
-}
-
 .go-rogue-btn{
     background: #4EC5F7;
 }
+
+
+/*
+    WE ARE GAMMER SECTION STYLES
+*/
+.gammer-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+}
+
+.gammer-purpose{
+    margin-top: 25px;
+}
+
+
+/*
+    Online Games section styles
+*/
+.online-games-content{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.online-games-card-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/*
+    Instantly Section styles
+*/
+.instantly-container{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.instanly-img-container{
+    margin-top: 50px;
+}
+
+.instantly-small-img{
+    position: relative;
+    bottom: 250px;
+    right: 140px;
+}
+
+
+/*
+    Anywhere styles section
+*/
+.anywhere-container{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.anywhere-img-container{
+    margin-top: 50px;
+}
+
+
+.anywhere-small-img{
+    position: relative;
+    bottom: 250px;
+    left: 550px;
+}
+
+
+
+
+
+
+
 
 /*
 -------------------------------------------
@@ -135,6 +232,12 @@ nav a{
 -------------------------------------------
 */
 @media screen and (max-width: 576px) {
+    /* Share Styles */
+    .section-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+    
     nav{
         flex-direction: column;
 
@@ -191,6 +294,59 @@ nav a{
         margin-right: 15px;
     }
 
+    .gammer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gammer-container img{
+        width: 100%;
+    }
+
+    
+    .online-games-card-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .online-games-card-container img{
+        width: 80%;
+    }
+    
+    .instantly-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instanly-img-container img{
+        width: 70%;
+    }
+
+    .instantly-small-img{
+        position: relative;
+        width: 40%;
+        bottom: 70px;
+        right: 5px;
+    }
+
+      .anywhere-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .anywhere-img-container img{
+        width: 70%;
+    }
+    
+    .anywhere-small-img{
+        position: relative;
+        width: 40%;
+        bottom: 70px;
+        left: 5px;
+    }
+
+
+    
 
 }
 
@@ -247,5 +403,50 @@ nav a{
         font-weight: 600;
         margin-right: 40px;
     }
+
+    
+    .gammer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+        
+    .online-games-card-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .instantly-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instanly-img-container img{
+        width: 70%;
+    }
+    
+    .instantly-small-img{
+        position: relative;
+        width: 30%;
+        bottom: 130px;
+        right: 10px;
+    }
+    
+    .anywhere-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .anywhere-img-container img{
+        width: 70%;
+    }
+    
+    .anywhere-small-img{
+        position: relative;
+        width: 30%;
+        bottom: 130px;
+        left: 10px;
+    }
+
 
 }
